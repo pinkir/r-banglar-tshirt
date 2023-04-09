@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { RingContext } from '../Grandpa/Grandpa';
 
-const Special = () => {
+const Special = ({ring}) => {
+    const angti = useContext(RingContext)
     return (
         <div>
             <h3>special</h3>
+            <p>Ring: {angti}</p>
         </div>
     );
 };
